@@ -1,34 +1,69 @@
-.container {
+.input {
+  width: 60px;
+}
+.pokelist {
   display: flex;
-  flex-direction: column;
-  width: 8vw;
-  margin: 25px 8px;
-  background-color: rgb(237, 233, 196);
-  border: 1px solid rgba(206, 202, 202, 0.667);
-  border-radius: 8px;
-  padding: 16px 20px;
-  .name {
-    font-family: "Roboto";
-    color: rgb(59, 56, 53);
-    text-align: center;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: underline;
-  }
-  .picture {
-    height: 100%;
-    width: 100%;
-  }
-  .caract {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.87rem;
-    font-family: "Courier New", Courier, monospace;
-    .hp {
-      color: green;
+  flex-wrap: wrap;
+  .poka {
+    display: block;
+    width: 280px;
+    margin: 10px 8px;
+    background-color: rgb(237, 233, 196);
+    border: 1px solid rgba(206, 202, 202, 0.667);
+    box-shadow: 8px 5px 8px rgb(209, 209, 209);
+    border-radius: 8px;
+    :hover {
+      transform: scale(1.025);
+      background-color: rgb(247, 244, 224);
+      cursor: pointer;
     }
-    .cp {
-      color: red;
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 12px 20px;
+      border-radius: 8px;
+      :hover {
+        transform: none;
+      }
+      .picture {
+        width: 55%;
+      }
+      .info {
+        width: 45%;
+        .name {
+          padding-bottom: 6px;
+          font-family: "Roboto";
+          color: rgb(59, 56, 53);
+          font-weight: bold;
+          text-transform: uppercase;
+          text-decoration: underline;
+        }
+        .caract {
+          padding-bottom: 4px;
+          display: flex;
+          justify-content: space-between;
+          font-size: 0.87rem;
+          font-family: "Courier New", Courier, monospace;
+          .hp {
+            background-color: rgb(60, 218, 60);
+            padding: 4px 6px;
+            border-radius: 5px;
+            border: 1px solid rgb(52, 185, 52);
+          }
+          .cp {
+            background-color: rgb(242, 83, 83);
+            padding: 4px 6px;
+            border-radius: 5px;
+            border: 1px solid rgb(199, 70, 70);
+          }
+        }
+        .type {
+          font-family: "Roboto";
+          font-size: 0.8rem;
+          font-style: italic;
+        }
+      }
     }
   }
 }
