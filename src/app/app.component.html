@@ -18,7 +18,13 @@
   </p>
 
   <div class="pokelist">
-    <div *ngFor="let pokemon of pokemonList" class="poka" pkmnBorderCard>
+    <div
+      *ngFor="let pokemon of pokemonList"
+      class="poka"
+      pkmnBorderCard="green"
+      pkmnBbgColor="#fbfaf3"
+      pkmnTranformScale="scale(1.07)"
+    >
       <div class="container">
         <img class="picture" src="{{ pokemon.picture }}" alt="" />
         <div class="info">
