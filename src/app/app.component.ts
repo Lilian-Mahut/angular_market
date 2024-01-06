@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, Input, OnInit } from "@angular/core";
 import { POKEMONS } from "./mock-pokemon-list";
 import { Pokemon } from "./pokemon";
 

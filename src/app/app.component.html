@@ -10,5 +10,16 @@
   Tu as séléctionné le pokémon: {{ pokemonSelected?.name }}
 </p>
 <p *ngIf="!pokemonSelected">Aucun pokémon n'a été trouvé.</p>
-<h1>Liste de Pokémons</h1>
-<p *ngFor="let pokemon of pokemonList">{{ pokemon.name }}</p>
+
+<div *ngFor="let pokemon of pokemonList">
+  <div class="container">
+    <div class="name">{{ pokemon.name }}</div>
+    <img class="picture" src="{{ pokemon.picture }}" alt="" />
+    <div class="caract">
+      <div class="hp">{{ pokemon.hp }} HP</div>
+      <div class="cp">{{ pokemon.cp }} CP</div>
+    </div>
+    <div class="type">{{ pokemon.types }}</div>
+    <div class="date">{{ pokemon.created }}</div>
+  </div>
+</div>
