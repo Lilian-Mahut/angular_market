@@ -33,7 +33,9 @@
             <div class="hp">{{ pokemon.hp }} HP</div>
             <div class="cp">{{ pokemon.cp }} CP</div>
           </div>
-          <div class="type">{{ pokemon.types }}</div>
+          <span *ngFor="let type of pokemon.types" class="type">{{
+            type | pokemonTypeColor
+          }}</span>
           <div class="date">{{ pokemon.created | date : "dd/MM/yyyy" }}</div>
         </div>
       </div>
