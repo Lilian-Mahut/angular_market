@@ -34,7 +34,7 @@
             <div class="cp">{{ pokemon.cp }} CP</div>
           </div>
           <div class="type">{{ pokemon.types }}</div>
-          <!-- <div class="date">{{ pokemon.created }}</div> -->
+          <div class="date">{{ pokemon.created | date : "dd/MM/yyyy" }}</div>
         </div>
       </div>
     </div>
