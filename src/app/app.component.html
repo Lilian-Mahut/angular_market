@@ -1,33 +1,35 @@
-<div class="mb-3">
-  <label class="form-label">Entre le numéro de ton pokémon préféré </label>
-  <input
-    #input
-    (keyup.enter)="selectPokemon(input.value)"
-    (blur)="selectPokemon(input.value)"
-    type="number"
-    minlength="1"
-    maxlength="2"
-    size="1"
-    class="form-control"
-  /><button>OK</button>
-</div>
-<p *ngIf="pokemonSelected">
-  ⏩ Tu as séléctionné le pokémon: {{ pokemonSelected?.name }}
-</p>
-<p *ngIf="!pokemonSelected">Aucun pokémon n'a été trouvé.</p>
+<div class="pokedex">
+  <div class="select">
+    <label class="">Entre le numéro de ton pokémon préféré </label>
+    <input
+      #input
+      (keyup.enter)="selectPokemon(input.value)"
+      (blur)="selectPokemon(input.value)"
+      type="number"
+      class="form"
+    /><button class="btn">OK</button>
+  </div>
+  <p *ngIf="pokemonSelected">
+    ⏩ Ton pokémon préféré est
+    <span class="monPokemon"> {{ pokemonSelected?.name }} !</span>
+  </p>
+  <p *ngIf="!pokemonSelected" class="noPokemon">
+    Aucun pokémon n'a été trouvé.
+  </p>
 
-<div class="pokelist">
-  <div *ngFor="let pokemon of pokemonList" class="poka">
-    <div class="container">
-      <img class="picture" src="{{ pokemon.picture }}" alt="" />
-      <div class="info">
-        <div class="name">{{ pokemon.name }}</div>
-        <div class="caract">
-          <div class="hp">{{ pokemon.hp }} HP</div>
-          <div class="cp">{{ pokemon.cp }} CP</div>
+  <div class="pokelist">
+    <div *ngFor="let pokemon of pokemonList" class="poka">
+      <div class="container">
+        <img class="picture" src="{{ pokemon.picture }}" alt="" />
+        <div class="info">
+          <div class="name">{{ pokemon.name }}</div>
+          <div class="caract">
+            <div class="hp">{{ pokemon.hp }} HP</div>
+            <div class="cp">{{ pokemon.cp }} CP</div>
+          </div>
+          <div class="type">{{ pokemon.types }}</div>
+          <!-- <div class="date">{{ pokemon.created }}</div> -->
         </div>
-        <div class="type">{{ pokemon.types }}</div>
-        <!-- <div class="date">{{ pokemon.created }}</div> -->
       </div>
     </div>
   </div>

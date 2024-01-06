@@ -1,67 +1,92 @@
-.input {
-  width: 60px;
-}
-.pokelist {
+.pokedex {
   display: flex;
-  flex-wrap: wrap;
-  .poka {
-    display: block;
-    width: 280px;
-    margin: 10px 8px;
-    background-color: rgb(237, 233, 196);
-    border: 1px solid rgba(206, 202, 202, 0.667);
-    box-shadow: 8px 5px 8px rgb(209, 209, 209);
-    border-radius: 8px;
-    :hover {
-      transform: scale(1.025);
-      background-color: rgb(247, 244, 224);
-      cursor: pointer;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  .select {
+    .form {
+      width: 40px;
+      border-radius: 0;
+      border-top: none;
+      border-left: none;
+      border-right: none;
     }
-    .container {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      padding: 12px 20px;
+    .btn {
+      border-radius: 0 8px 8px 0;
+    }
+  }
+  .monPokemon {
+    font-family: "Roboto";
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .noPokemon {
+    font-style: italic;
+  }
+  .pokelist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .poka {
+      display: block;
+      width: 280px;
+      margin: 10px 8px;
+      background-color: rgb(237, 233, 196);
+      border: 1px solid rgba(206, 202, 202, 0.667);
+      box-shadow: 8px 5px 8px rgb(209, 209, 209);
       border-radius: 8px;
       :hover {
-        transform: none;
+        transform: scale(1.025);
+        background-color: rgb(247, 244, 224);
+        cursor: pointer;
       }
-      .picture {
-        width: 55%;
-      }
-      .info {
-        width: 45%;
-        .name {
-          padding-bottom: 6px;
-          font-family: "Roboto";
-          color: rgb(59, 56, 53);
-          font-weight: bold;
-          text-transform: uppercase;
-          text-decoration: underline;
+      .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 12px 20px;
+        border-radius: 8px;
+        :hover {
+          transform: none;
         }
-        .caract {
-          padding-bottom: 4px;
-          display: flex;
-          justify-content: space-between;
-          font-size: 0.87rem;
-          font-family: "Courier New", Courier, monospace;
-          .hp {
-            background-color: rgb(60, 218, 60);
-            padding: 4px 6px;
-            border-radius: 5px;
-            border: 1px solid rgb(52, 185, 52);
-          }
-          .cp {
-            background-color: rgb(242, 83, 83);
-            padding: 4px 6px;
-            border-radius: 5px;
-            border: 1px solid rgb(199, 70, 70);
-          }
+        .picture {
+          width: 55%;
         }
-        .type {
-          font-family: "Roboto";
-          font-size: 0.8rem;
-          font-style: italic;
+        .info {
+          width: 45%;
+          .name {
+            padding-bottom: 6px;
+            font-family: "Roboto";
+            color: rgb(59, 56, 53);
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: underline;
+          }
+          .caract {
+            padding-bottom: 4px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.87rem;
+            font-family: "Courier New", Courier, monospace;
+            .hp {
+              background-color: rgb(60, 218, 60);
+              padding: 4px 6px;
+              border-radius: 5px;
+              border: 1px solid rgb(52, 185, 52);
+            }
+            .cp {
+              background-color: rgb(242, 83, 83);
+              padding: 4px 6px;
+              border-radius: 5px;
+              border: 1px solid rgb(199, 70, 70);
+              color: white;
+            }
+          }
+          .type {
+            font-family: "Roboto";
+            font-size: 0.8rem;
+            font-style: italic;
+          }
         }
       }
     }

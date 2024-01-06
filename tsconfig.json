@@ -23,6 +23,11 @@
     "lib": ["ES2022", "dom"]
   },
   "angularCompilerOptions": {
+    "extendedDiagnostics": {
+      "checks": {
+        "optionalChainNotNullable": "suppress"
+      }
+    },
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
