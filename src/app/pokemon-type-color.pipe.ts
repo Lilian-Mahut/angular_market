@@ -44,6 +44,6 @@ export class PokemonTypeColorPipe implements PipeTransform {
         break;
     }
 
-    return "mat-chip " + color;
+    return "chip " + color;
   }
 }

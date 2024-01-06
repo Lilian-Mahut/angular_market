@@ -17,26 +17,27 @@
     Aucun pokémon n'a été trouvé.
   </p>
 
-  <div class="pokelist">
-    <div
-      *ngFor="let pokemon of pokemonList"
-      class="poka"
-      pkmnBorderCard="green"
-      pkmnBbgColor="#fbfaf3"
-      pkmnTranformScale="scale(1.07)"
-    >
-      <div class="container">
-        <img class="picture" src="{{ pokemon.picture }}" alt="" />
-        <div class="info">
-          <div class="name">{{ pokemon.name }}</div>
-          <div class="caract">
-            <div class="hp">{{ pokemon.hp }} HP</div>
-            <div class="cp">{{ pokemon.cp }} CP</div>
+  <div class="container">
+    <div class="row">
+      <div *ngFor="let pokemon of pokemonList" class="col s6 m4">
+        <div class="card horizontal" pkmnBorderCard>
+          <div class="card-image">
+            <img src="{{ pokemon.picture }}" alt="" />
           </div>
-          <span *ngFor="let type of pokemon.types" class="type">{{
-            type | pokemonTypeColor
-          }}</span>
-          <div class="date">{{ pokemon.created | date : "dd/MM/yyyy" }}</div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <p>{{ pokemon.name }}</p>
+              <p>
+                <small>{{ pokemon.created | date : "dd/MM/yyyy" }}</small>
+              </p>
+              <span
+                *ngFor="let type of pokemon.types"
+                class="{{ type | pokemonTypeColor }}"
+              >
+                {{ type }}
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
