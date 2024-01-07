@@ -20,12 +20,12 @@
   <div class="container">
     <div class="row">
       <div *ngFor="let pokemon of pokemonList" class="col s6 m4">
-        <div class="card horizontal" pkmnBorderCard>
-          <div class="card-image">
+        <div class="card horizontal valign-wrapper" pkmnBorderCard>
+          <div class="card-image flex right-align">
             <img src="{{ pokemon.picture }}" alt="" />
           </div>
           <div class="card-stacked">
-            <div class="card-content">
+            <div class="card-content left-align">
               <p>{{ pokemon.name }}</p>
               <p>
                 <small>{{ pokemon.created | date : "dd/MM/yyyy" }}</small>
