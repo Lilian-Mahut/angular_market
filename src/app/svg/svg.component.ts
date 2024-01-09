@@ -3,8 +3,8 @@ import { Component } from "@angular/core";
 @Component({
   selector: "app-svg",
   template: `<svg
-    height="44px"
-    width="44px"
+    height="24px"
+    width="24px"
     version="1.1"
     id="Layer_1"
     xmlns="http://www.w3.org/2000/svg"
