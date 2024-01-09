@@ -1,21 +1,23 @@
-<div class="pokedex">
+<div class="center">
   <div class="select">
-    <label class="">Entre le numéro de ton pokémon préféré </label>
     <input
       #input
       (keyup.enter)="selectPokemon(input.value)"
       (blur)="selectPokemon(input.value)"
       type="number"
       class="form"
-    /><button class="btn">OK</button>
+    />
   </div>
-  <p *ngIf="pokemonSelected">
-    ⏩ Ton pokémon préféré est
-    <span class="monPokemon"> {{ pokemonSelected?.name }} !</span>
-  </p>
-  <p *ngIf="!pokemonSelected" class="noPokemon">
-    Aucun pokémon n'a été trouvé.
-  </p>
+  <div *ngIf="pokemonSelected; then monPokemon; else aucunPokemon"></div>
+  <ng-template #monPokemon>
+    <p>
+      Ton pokémon préféré est
+      <span class="monPokemon"> {{ pokemonSelected?.name }} !</span>
+    </p>
+  </ng-template>
+  <ng-template #aucunPokemon>
+    <p>Entre le numérode ton pokémon préféré</p>
+  </ng-template>
 
   <div class="container">
     <div class="row">

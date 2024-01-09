@@ -1,6 +1,7 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, TemplateRef } from "@angular/core";
 import { POKEMONS } from "./mock-pokemon-list";
 import { Pokemon } from "./pokemon";
+import { NgIfContext } from "@angular/common";
 
 @Component({
   selector: "app-root",
@@ -11,6 +12,8 @@ import { Pokemon } from "./pokemon";
 export class AppComponent implements OnInit {
   pokemonList: Pokemon[] = POKEMONS;
   pokemonSelected: Pokemon | undefined;
+  monPokemon: TemplateRef<NgIfContext<Pokemon | undefined>> | null;
+  aucunPokemon: TemplateRef<NgIfContext<Pokemon | undefined>> | null;
 
   ngOnInit() {
     console.table(this.pokemonList);
