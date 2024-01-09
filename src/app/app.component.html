@@ -1,29 +1,36 @@
 <div class="center">
-  <div class="select">
-    <input
-      #input
-      (keyup.enter)="selectPokemon(input.value)"
-      (blur)="selectPokemon(input.value)"
-      type="number"
-      class="form"
-    />
+  <div class="row">
+    <div class="col s12">
+      Ton Pokémon préféré est le n°
+      <div class="input-field inline">
+        <input
+          #input
+          (keyup.enter)="selectPokemon(input.value)"
+          (blur)="selectPokemon(input.value)"
+          type="number"
+          class="form"
+        />
+      </div>
+    </div>
+    <div class="form">
+      <div *ngIf="pokemonSelected; then monPokemon; else aucunPokemon"></div>
+      <ng-template #monPokemon>
+        <label>
+          Ton pokémon préféré est
+          <span class="monPokemon"> {{ pokemonSelected?.name }} !</span>
+        </label>
+      </ng-template>
+      <ng-template #aucunPokemon>
+        <label>Entre le numérode de ton Pokémon préféré</label>
+      </ng-template>
+    </div>
   </div>
-  <div *ngIf="pokemonSelected; then monPokemon; else aucunPokemon"></div>
-  <ng-template #monPokemon>
-    <p>
-      Ton pokémon préféré est
-      <span class="monPokemon"> {{ pokemonSelected?.name }} !</span>
-    </p>
-  </ng-template>
-  <ng-template #aucunPokemon>
-    <p>Entre le numérode ton pokémon préféré</p>
-  </ng-template>
 
   <div class="container">
     <div class="row">
       <div *ngFor="let pokemon of pokemonList" class="col s6 m4">
         <div class="card horizontal valign-wrapper" pkmnBorderCard>
-          <div class="card-image flex right-align">
+          <div class="card-image flex">
             <img src="{{ pokemon.picture }}" alt="" />
           </div>
           <div class="card-stacked">
