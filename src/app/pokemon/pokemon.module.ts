@@ -5,6 +5,7 @@ import { BorderCardDirective } from "./border-card.directive";
 import { DetailPokemonComponent } from "./detail-pokemon/detail-pokemon.component";
 import { ListPokemonComponent } from "./list-pokemon/list-pokemon.component";
 import { RouterModule, Routes } from "@angular/router";
+import { BackgroundCardDirective } from "./background-card.directive";
 
 const pokemonRoutes: Routes = [
   { path: "pokemons", component: ListPokemonComponent },
@@ -14,6 +15,7 @@ const pokemonRoutes: Routes = [
 @NgModule({
   declarations: [
     BorderCardDirective,
+    BackgroundCardDirective,
     DetailPokemonComponent,
     ListPokemonComponent,
     PokemonTypeColorPipe,
