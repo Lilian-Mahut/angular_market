@@ -1,7 +1,11 @@
 <div class="container">
   <div class="row">
     <div *ngFor="let pokemon of pokemonList" class="col s6 m4">
-      <div class="card horizontal valign-wrapper" pkmnBorderCard>
+      <div
+        (click)="goToPokemon(pokemon)"
+        class="card horizontal valign-wrapper"
+        pkmnBorderCard
+      >
         <div class="card-image flex">
           <img src="{{ pokemon.picture }}" alt="" />
         </div>
