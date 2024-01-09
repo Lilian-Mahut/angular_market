@@ -10,7 +10,9 @@ import { DetailPokemonComponent } from "./pokemon/detail-pokemon/detail-pokemon.
 import { ListPokemonComponent } from "./pokemon/list-pokemon/list-pokemon.component";
 import { PokemonTypeColorPipe } from "./pokemon-type-color.pipe";
 import { AppRoutingModule } from "./app-routing.module";
-import { SvgComponent } from "./svg/svg.component";
+import { SvgPokeballOpenComponent } from "./svg-pokeball-open/svg-pokeball-open.component";
+import { SvgPokeballCloseComponent } from "./svg-pokeball-close/svg-pokeball-close.component";
+import { PageNotFoundComponent } from "./page-not-found/page-not-found.component";
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { SvgComponent } from "./svg/svg.component";
     DetailPokemonComponent,
     ListPokemonComponent,
     PokemonTypeColorPipe,
-    SvgComponent,
+    SvgPokeballOpenComponent,
+    SvgPokeballCloseComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,

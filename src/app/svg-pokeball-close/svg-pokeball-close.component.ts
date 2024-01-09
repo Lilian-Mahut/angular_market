@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
 
 @Component({
-  selector: "app-svg",
+  selector: "app-svg-pokeball-close",
   template: `<svg
     height="24px"
     width="24px"
@@ -42,4 +42,4 @@ import { Component } from "@angular/core";
     />
   </svg>`,
 })
-export class SvgComponent {}
+export class SvgPokeballCloseComponent {}
