@@ -9,7 +9,10 @@ import { Component } from "@angular/core";
         alt=""
       />
       <h1>Hey, cette page n'existe pas !</h1>
-      <a routerLink="/pokemons" class="waves-effect waves-teal btn-flat link">
+      <a
+        routerLink="/pokemons"
+        class="waves-effect waves-teal btn orange darken-2 link"
+      >
         Retourner à l'accueil
       </a>
     </div>

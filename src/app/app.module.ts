@@ -6,6 +6,7 @@ import { AppRoutingModule } from "./app-routing.module";
 import { PageNotFoundComponent } from "./page-not-found/page-not-found.component";
 
 import { SvgPokeballCloseComponent } from "./pokemon/svg-pokeball-close/svg-pokeball-close.component";
+import { PokemonModule } from "./pokemon/pokemon.module";
 
 @NgModule({
   declarations: [
@@ -13,7 +14,7 @@ import { SvgPokeballCloseComponent } from "./pokemon/svg-pokeball-close/svg-poke
     SvgPokeballCloseComponent,
     PageNotFoundComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, PokemonModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
