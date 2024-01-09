@@ -10,6 +10,7 @@ import { DetailPokemonComponent } from "./pokemon/detail-pokemon/detail-pokemon.
 import { ListPokemonComponent } from "./pokemon/list-pokemon/list-pokemon.component";
 import { PokemonTypeColorPipe } from "./pokemon-type-color.pipe";
 import { AppRoutingModule } from "./app-routing.module";
+import { SvgComponent } from "./svg/svg.component";
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { AppRoutingModule } from "./app-routing.module";
     DetailPokemonComponent,
     ListPokemonComponent,
     PokemonTypeColorPipe,
+    SvgComponent,
   ],
   imports: [
     BrowserModule,

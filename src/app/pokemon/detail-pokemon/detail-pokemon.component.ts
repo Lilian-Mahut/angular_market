@@ -22,4 +22,8 @@ export class DetailPokemonComponent implements OnInit {
       );
     }
   }
+
+  goBack() {
+    throw new Error("Method not implemented.");
+  }
 }
