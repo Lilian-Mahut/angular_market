@@ -1,27 +1,3 @@
-<div class="center">
-  <div class="row">
-    Ton Pokémon préféré est le n°
-    <div class="input-field inline">
-      <input
-        #input
-        (keyup.enter)="selectPokemon(input.value)"
-        (blur)="selectPokemon(input.value)"
-        type="number"
-      />
-    </div>
-    <div class="form">
-      <div *ngIf="pokemonSelected; then monPokemon; else aucunPokemon"></div>
-      <ng-template #monPokemon>
-        <label>
-          Ton pokémon préféré est
-          <span class="monPokemon"> {{ pokemonSelected?.name }} !</span>
-        </label>
-      </ng-template>
-      <ng-template #aucunPokemon>
-        <label>Entre le numérode de ton Pokémon préféré</label>
-      </ng-template>
-    </div>
-  </div>
+<h1 class="center">Liste de Pokémons</h1>
 
-  <router-outlet></router-outlet>
-</div>
+<router-outlet></router-outlet>
