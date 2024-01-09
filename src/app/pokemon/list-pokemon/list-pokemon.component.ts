@@ -6,6 +6,7 @@ import { Router } from "@angular/router";
 @Component({
   selector: "app-list-pokemon",
   templateUrl: "./list-pokemon.component.html",
+  styles: [".link { cursor: pointer;}"],
 })
 export class ListPokemonComponent {
   pokemonList: Pokemon[] = POKEMONS;
