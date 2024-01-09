@@ -23,29 +23,5 @@
     </div>
   </div>
 
-  <div class="container">
-    <div class="row">
-      <div *ngFor="let pokemon of pokemonList" class="col s6 m4">
-        <div class="card horizontal valign-wrapper" pkmnBorderCard>
-          <div class="card-image flex">
-            <img src="{{ pokemon.picture }}" alt="" />
-          </div>
-          <div class="card-stacked">
-            <div class="card-content left-align">
-              <p>{{ pokemon.name }}</p>
-              <p>
-                <small>{{ pokemon.created | date : "dd/MM/yyyy" }}</small>
-              </p>
-              <span
-                *ngFor="let type of pokemon.types"
-                class="{{ type | pokemonTypeColor }}"
-              >
-                {{ type }}
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <router-outlet></router-outlet>
 </div>
