@@ -1,5 +1,6 @@
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
+import { FormsModule } from "@angular/forms";
 
 import { AppComponent } from "./app.component";
 import { AppRoutingModule } from "./app-routing.module";
@@ -14,7 +15,7 @@ import { PokemonModule } from "./pokemon/pokemon.module";
     SvgPokeballCloseComponent,
     PageNotFoundComponent,
   ],
-  imports: [BrowserModule, PokemonModule, AppRoutingModule],
+  imports: [BrowserModule, FormsModule, PokemonModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
