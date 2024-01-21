@@ -15,6 +15,10 @@ export class PokemonFormComponent implements OnInit {
 
   ngOnInit() {
     this.types = this.pokemonService.getPokemonTypeList();
+    // const pokemonId: string = this.router.snapshot.paramMap.get("id");
+    // if (pokemonId) {
+    //   this.pokemon = this.pokemonService.getPokemonById(+pokemonId);
+    // }
   }
 
   hasType(type: string): boolean {
