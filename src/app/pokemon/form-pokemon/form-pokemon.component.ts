@@ -5,7 +5,7 @@ import { Router } from "@angular/router";
 
 @Component({
   selector: "app-pokemon-form",
-  templateUrl: "./pokemon-form.component.html",
+  templateUrl: "./form-pokemon.component.html",
 })
 export class PokemonFormComponent implements OnInit {
   @Input() pokemon: Pokemon;
