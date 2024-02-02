@@ -6,18 +6,20 @@ import { AppComponent } from "./app.component";
 import { AppRoutingModule } from "./app-routing.module";
 import { PageNotFoundComponent } from "./page-not-found/page-not-found.component";
 
-import { MarketModule } from "./market/market.module";
-import { SearchMarketComponent } from "./search-market/search-market.component";
+import { SvgPokeballCloseComponent } from "./pokemon/svg-pokeball-close/svg-pokeball-close.component";
+import { PokemonModule } from "./pokemon/pokemon.module";
+import { SearchPokemonComponent } from "./search-pokemon/search-pokemon.component";
 import { MenuComponent } from "./menu/menu.component";
 
 @NgModule({
   declarations: [
     AppComponent,
+    SvgPokeballCloseComponent,
     PageNotFoundComponent,
-    SearchMarketComponent,
+    SearchPokemonComponent,
     MenuComponent,
   ],
-  imports: [BrowserModule, FormsModule, MarketModule, AppRoutingModule],
+  imports: [BrowserModule, FormsModule, PokemonModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })

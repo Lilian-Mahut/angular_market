@@ -1,13 +1,13 @@
 import { Directive, ElementRef, HostListener, Input } from "@angular/core";
 
 @Directive({
-  selector: "[mktBackgroundCard]",
+  selector: "[pkmnBackgroundCard]",
 })
 export class BackgroundCardDirective {
   constructor(private el: ElementRef) {
     this.setBackgroundColor("#ede9c4");
   }
-  @Input("mktBbgColor") backgroundColor: string;
+  @Input("pkmnBbgColor") backgroundColor: string;
 
   @HostListener("mouseenter") onMouseEnter() {
     this.setBackgroundColor(this.backgroundColor || "#f7f4e0");

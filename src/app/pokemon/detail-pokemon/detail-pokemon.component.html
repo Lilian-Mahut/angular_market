@@ -1,9 +1,9 @@
-<div *ngIf="market" class="row">
+<div *ngIf="pokemon" class="row">
   <div class="col s12 m8 offset-m2">
-    <h2 class="header center">{{ market.name }}</h2>
-    <div class="card horizontal hoverable" mktBackgroundCard>
+    <h2 class="header center">{{ pokemon.name }}</h2>
+    <div class="card horizontal hoverable" pkmnBackgroundCard>
       <div class="card-image valign-wrapper">
-        <img [src]="market.picture" [alt]="market.name" />
+        <img [src]="pokemon.picture" [alt]="pokemon.name" />
       </div>
       <div class="card-stacked">
         <div class="card-content">
@@ -12,23 +12,23 @@
               <tr>
                 <td>Nom</td>
                 <td>
-                  <strong>{{ market.name }}</strong>
+                  <strong>{{ pokemon.name }}</strong>
                 </td>
               </tr>
               <tr>
                 <td>Points de vie</td>
-                <td>{{ market.hp }}</td>
+                <td>{{ pokemon.hp }}</td>
               </tr>
               <tr>
                 <td>Dégâts</td>
-                <td>{{ market.cp }}</td>
+                <td>{{ pokemon.cp }}</td>
               </tr>
               <tr>
                 <td>Types</td>
                 <td>
                   <span
-                    *ngFor="let type of market.types"
-                    class="{{ type | marketTypeColor }}"
+                    *ngFor="let type of pokemon.types"
+                    class="{{ type | pokemonTypeColor }}"
                     >{{ type }}</span
                   >
                 </td>
@@ -36,7 +36,7 @@
               <tr>
                 <td>Date de création</td>
                 <td>
-                  <em>{{ market.created | date : "dd/MM/yyyy" }}</em>
+                  <em>{{ pokemon.created | date : "dd/MM/yyyy" }}</em>
                 </td>
               </tr>
             </tbody>
@@ -44,14 +44,14 @@
         </div>
         <div class="card-action row">
           <a
-            (click)="goToMarketList()"
+            (click)="goToPokemonList()"
             class="waves-effect waves-teal btn orange darken-2 col s3 push-s0"
           >
             <i class="material-icons left">reply</i>
             Retour
           </a>
           <a
-            (click)="goToEditMarket(market)"
+            (click)="editPokemon()"
             class="waves-effect waves-teal btn amber lighten-2 black-text col s3 push-s4"
           >
             <i class="material-icons left">edit</i>
@@ -62,4 +62,4 @@
     </div>
   </div>
 </div>
-<h4 *ngIf="!market" class="center">Aucun market à afficher.</h4>
+<h4 *ngIf="!pokemon" class="center">Aucun pokémon à afficher.</h4>
