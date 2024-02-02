@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: "app-search-pokemon",
+  selector: "app-search-market",
   template: `
     <a>
       <i class="material-icons click-to-toggle" (click)="openSearch()"
@@ -11,6 +11,6 @@ import { Component, OnInit } from "@angular/core";
   `,
   styles: ``,
 })
-export class SearchPokemonComponent {
+export class SearchMarketComponent {
   openSearch() {}
 }

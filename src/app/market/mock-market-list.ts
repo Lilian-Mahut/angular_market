@@ -1,13 +1,13 @@
-import { Pokemon } from "./pokemon";
+import { Market } from "./market";
 
-export const POKEMONS: Pokemon[] = [
+export const MARKETS: Market[] = [
   {
     id: 1,
     name: "Bulbizarre",
     hp: 25,
     cp: 5,
     picture:
-      "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png",
+      "https://assets.market.com/assets/cms2/img/pokedex/detail/001.png",
     types: ["Plante", "Poison"],
     created: new Date(),
   },
@@ -17,7 +17,7 @@ export const POKEMONS: Pokemon[] = [
     hp: 28,
     cp: 6,
     picture:
-      "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/004.png",
+      "https://assets.market.com/assets/cms2/img/pokedex/detail/004.png",
     types: ["Feu"],
     created: new Date(),
   },
@@ -27,7 +27,7 @@ export const POKEMONS: Pokemon[] = [
     hp: 21,
     cp: 4,
     picture:
-      "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/007.png",
+      "https://assets.market.com/assets/cms2/img/pokedex/detail/007.png",
     types: ["Eau"],
     created: new Date(),
   },
@@ -37,7 +37,7 @@ export const POKEMONS: Pokemon[] = [
     hp: 21,
     cp: 3,
     picture:
-      "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/010.png",
+      "https://assets.market.com/assets/cms2/img/pokedex/detail/010.png",
     types: ["Insecte"],
     created: new Date(),
   },
@@ -47,7 +47,7 @@ export const POKEMONS: Pokemon[] = [
     hp: 16,
     cp: 2,
     picture:
-      "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/013.png",
+      "https://assets.market.com/assets/cms2/img/pokedex/detail/013.png",
     types: ["Insecte", "Poison"],
     created: new Date(),
   },
@@ -57,7 +57,7 @@ export const POKEMONS: Pokemon[] = [
     hp: 30,
     cp: 7,
     picture:
-      "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/016.png",
+      "https://assets.market.com/assets/cms2/img/pokedex/detail/016.png",
     types: ["Normal", "Vol"],
     created: new Date(),
   },
@@ -67,7 +67,7 @@ export const POKEMONS: Pokemon[] = [
     hp: 18,
     cp: 6,
     picture:
-      "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/019.png",
+      "https://assets.market.com/assets/cms2/img/pokedex/detail/019.png",
     types: ["Normal"],
     created: new Date(),
   },
@@ -77,7 +77,7 @@ export const POKEMONS: Pokemon[] = [
     hp: 14,
     cp: 5,
     picture:
-      "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/021.png",
+      "https://assets.market.com/assets/cms2/img/pokedex/detail/021.png",
     types: ["Normal", "Vol"],
     created: new Date(),
   },
@@ -87,7 +87,7 @@ export const POKEMONS: Pokemon[] = [
     hp: 16,
     cp: 4,
     picture:
-      "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/023.png",
+      "https://assets.market.com/assets/cms2/img/pokedex/detail/023.png",
     types: ["Poison"],
     created: new Date(),
   },
@@ -97,7 +97,7 @@ export const POKEMONS: Pokemon[] = [
     hp: 21,
     cp: 7,
     picture:
-      "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/025.png",
+      "https://assets.market.com/assets/cms2/img/pokedex/detail/025.png",
     types: ["Electrik"],
     created: new Date(),
   },
@@ -107,7 +107,7 @@ export const POKEMONS: Pokemon[] = [
     hp: 19,
     cp: 3,
     picture:
-      "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/027.png",
+      "https://assets.market.com/assets/cms2/img/pokedex/detail/027.png",
     types: ["Normal"],
     created: new Date(),
   },
@@ -117,7 +117,7 @@ export const POKEMONS: Pokemon[] = [
     hp: 25,
     cp: 5,
     picture:
-      "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/035.png",
+      "https://assets.market.com/assets/cms2/img/pokedex/detail/035.png",
     types: ["Fée"],
     created: new Date(),
   },
@@ -127,7 +127,7 @@ export const POKEMONS: Pokemon[] = [
     hp: 17,
     cp: 8,
     picture:
-      "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/037.png",
+      "https://assets.market.com/assets/cms2/img/pokedex/detail/037.png",
     types: ["Feu"],
     created: new Date(),
   },
@@ -137,7 +137,7 @@ export const POKEMONS: Pokemon[] = [
     hp: 46,
     cp: 8,
     picture:
-      "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/039.png",
+      "https://assets.market.com/assets/cms2/img/pokedex/detail/039.png",
     types: ["Normal", "Fée"],
     created: new Date(),
   },
@@ -147,7 +147,7 @@ export const POKEMONS: Pokemon[] = [
     hp: 21,
     cp: 7,
     picture:
-      "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/041.png",
+      "https://assets.market.com/assets/cms2/img/pokedex/detail/041.png",
     types: ["Poison", "Vol"],
     created: new Date(),
   },
@@ -157,7 +157,7 @@ export const POKEMONS: Pokemon[] = [
     hp: 21,
     cp: 8,
     picture:
-      "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/043.png",
+      "https://assets.market.com/assets/cms2/img/pokedex/detail/043.png",
     types: ["Plante", "Poison"],
     created: new Date(),
   },
@@ -167,7 +167,7 @@ export const POKEMONS: Pokemon[] = [
     hp: 21,
     cp: 15,
     picture:
-      "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/046.png",
+      "https://assets.market.com/assets/cms2/img/pokedex/detail/046.png",
     types: ["Insecte", "Plante"],
     created: new Date(),
   },
@@ -177,7 +177,7 @@ export const POKEMONS: Pokemon[] = [
     hp: 25,
     cp: 12,
     picture:
-      "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/048.png",
+      "https://assets.market.com/assets/cms2/img/pokedex/detail/048.png",
     types: ["Insecte", "Poison"],
     created: new Date(),
   },

@@ -1,4 +1,4 @@
-export class Pokemon {
+export class Market {
   id: number;
   hp: number;
   cp: number;

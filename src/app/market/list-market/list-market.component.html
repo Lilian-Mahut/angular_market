@@ -1,24 +1,24 @@
 <div class="container">
   <div class="row">
-    <div *ngFor="let pokemon of pokemonList" class="col s6 m4">
+    <div *ngFor="let market of marketList" class="col s6 m4">
       <div
-        (click)="goToPokemon(pokemon)"
+        (click)="goToMarket(market)"
         class="card horizontal valign-wrapper link"
         pkmnBorderCard
         pkmnBackgroundCard
       >
         <div class="card-image flex">
-          <img src="{{ pokemon.picture }}" alt="" />
+          <img src="{{ market.picture }}" alt="" />
         </div>
         <div class="card-stacked">
           <div class="card-content left-align">
-            <p>{{ pokemon.name }}</p>
+            <p>{{ market.name }}</p>
             <p>
-              <small>{{ pokemon.created | date : "dd/MM/yyyy" }}</small>
+              <small>{{ market.created | date : "dd/MM/yyyy" }}</small>
             </p>
             <span
-              *ngFor="let type of pokemon.types"
-              class="{{ type | pokemonTypeColor }}"
+              *ngFor="let type of market.types"
+              class="{{ type | marketTypeColor }}"
             >
               {{ type }}
             </span>
